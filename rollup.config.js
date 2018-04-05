@@ -20,15 +20,15 @@ const bundle = config => file => ({
   output: {
     file: `./dist/${file}.js`,
     format: "umd",
-    sourcemap: "inline",
+    sourcemap: true,
     name: config.name || file.replace(/\//g, ".")
   },
   moduleContext: config.moduleContext,
   plugins: [
     ...[config.css ? postcss(config.css) : []],
     ...[config.alias ? [alias(config.alias)] : []],
-    babel(),
     json({ preferConst: true }),
+    babel(),
     ...[config.legacy ? [legacy(config.legacy)] : []],
     resolve({
       module: true,
