@@ -1,6 +1,6 @@
 {
   "name": "rollup.config.flow",
-  "version": "1.1.0",
+  "version": "4.0.0",
   "description": "rollup config for bundling flow projects",
   "main": "rollup.config.js",
   "directories": {
@@ -9,13 +9,13 @@
   },
   "dependencies": {
     "protocol": "0.4.0",
-    "rollup-plugin-babel": "3.0.3",
-    "rollup-plugin-commonjs": "8.3.0",
-    "rollup-plugin-json": "2.3.0",
+    "rollup-plugin-babel": "4.3.2",
+    "rollup-plugin-commonjs": "9.3.4",
+    "rollup-plugin-json": "4.0.0",
     "rollup-plugin-legacy": "1.0.0",
-    "rollup-plugin-node-resolve": "3.0.3",
-    "rollup-plugin-postcss": "1.2.8",
-    "rollup-plugin-serve": "0.4.2"
+    "rollup-plugin-node-resolve": "4.2.3",
+    "rollup-plugin-postcss": "2.0.3",
+    "rollup-plugin-serve": "1.0.1"
   },
   "devDependencies": {},
   "scripts": {},
@@ -23,7 +23,11 @@
     "type": "git",
     "url": "https://github.com/Gozala/rollup.config.flow.git"
   },
-  "keywords": ["rollup", "config", "flow"],
+  "keywords": [
+    "rollup",
+    "config",
+    "flow"
+  ],
   "author": "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)",
   "license": "MIT",
   "bugs": {
